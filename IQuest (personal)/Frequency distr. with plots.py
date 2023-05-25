@@ -40,7 +40,7 @@ def frequency():
 
 
 def plot():
-    plt.bar(FREQ.keys(), FREQ.values(), 1)
+    plt.bar(FREQ.keys(), FREQ.values(), width=0.5)
     plt.title("Time slot selection response")
     plt.xlabel("Time slots")
     plt.ylabel("Frequency")
@@ -55,7 +55,7 @@ def main():
     #print(RESPONSES)
     frequency()
     #print(FREQ)
-    print(max(FREQ))
+    print(max(zip(FREQ.values(), FREQ.keys()))[1])
     plot()
     
     
