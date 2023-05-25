@@ -9,9 +9,7 @@
 try:
     import matplotlib.pyplot as plt
 except ModuleNotFoundError:
-    import sys
-    import subprocess
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'Matplotlib'])
+    print("Install Matplotlib")
     
 
 RESPONSES= []
