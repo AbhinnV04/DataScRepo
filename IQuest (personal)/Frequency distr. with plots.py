@@ -50,10 +50,8 @@ def main():
     createRandomResponse()
     #location = input("Enter the file path: ")                  # /For a custom location of the file./
     readResponse()
-    #print(RESPONSES)
     frequency()
-    #print(FREQ)
-    print(max(zip(FREQ.values(), FREQ.keys()))[1])
+    print("Highest frequency: ", max(zip(FREQ.values(), FREQ.keys()))[1])
     plot()
     
     
